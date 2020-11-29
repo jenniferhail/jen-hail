@@ -1,22 +1,22 @@
 import React from "react"
 import Header from "../components/header"
-import Container from "../components/container"
-// import styled from "styled-components"
+import Footer from "../components/footer"
+import Gallery from "../blocks/gallery"
+import Bio from "../blocks/bio"
+import Notes from "../blocks/notes"
+import Work from "../blocks/work"
 
 export default function Home() {
   return (
     <React.Fragment>
       <Header headerText="Jen Hail" />
-      <Container type="basic-content">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium,
-          officiis!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore
-          repellendus suscipit?
-        </p>
-      </Container>
+      <main className="main">
+        <Gallery />
+        <Bio />
+        <Work />
+        <Notes />
+      </main>
+      <Footer />
     </React.Fragment>
   )
 }

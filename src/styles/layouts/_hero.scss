@@ -1,0 +1,35 @@
+.layout.hero {
+    position: relative;
+    .background,
+    .image {
+        width: 600px;
+        height: 400px;
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+    .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0;
+        text-align: center;
+        z-index: 1;
+    }
+    &.style-1 {
+
+    }
+    &.style-2 {
+
+    }
+    &.style-3 {
+
+    }
+    &.style-4 {
+
+    }
+}

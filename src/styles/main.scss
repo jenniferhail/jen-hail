@@ -1,0 +1,71 @@
+//----------------------------------*\
+// NORMALIZE
+//----------------------------------*/
+// Bitters is made to work alongside
+// a CSS reset and not replace it.
+// Our suggested reset is Normalize.
+@import 'modules/normalize';
+
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+@import 'mixins/position';
+@import 'mixins/proportional';
+@import 'mixins/underline';
+
+//----------------------------------*\
+// SCSS BITTERS
+//----------------------------------*/
+// Loading bourbon dependancies
+@import 'bitters/required';
+@import 'bitters/base';
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+// Load external sass
+@import 'vendor/external';
+@import 'vendor/glidejs/glide.core';
+@import 'vendor/glidejs/glide.theme';
+@import 'vendor/aos/aos';
+
+//----------------------------------*\
+// MODULES
+//----------------------------------*/
+@import 'modules/misc';
+@import 'modules/print';
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+@import 'partials/main';
+@import 'partials/header';
+@import 'partials/search';
+@import 'partials/sidebar';
+@import 'partials/footer';
+
+//----------------------------------*\
+// LAYOUTS
+//----------------------------------*/
+@import 'layouts/accordions';
+@import 'layouts/basic-content';
+@import 'layouts/cards';
+@import 'layouts/cta';
+@import 'layouts/gallery';
+@import 'layouts/hero';
+@import 'layouts/listing';
+@import 'layouts/slider';
+@import 'layouts/table';
+@import 'layouts/work';
+
+//----------------------------------*\
+// APP OPTIONS
+//----------------------------------*/
+@import 'options/cookie-notice';
+@import 'options/notification';
+
+html {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease;
+}
