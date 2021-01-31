@@ -1,23 +1,22 @@
 import { Link } from "gatsby"
 import React from "react"
 import { createGlobalStyle } from "styled-components"
-import styled from "styled-components"
-// import "./header.scss"
+// import styled from "styled-components"
 import "fontsource-roboto"
 
 export default function Header(props) {
   return (
-    <HeaderTag className="header">
+    <header className="header">
       <GlobalStyle />
       <div className="wrapper">
         <div className="row">
           <nav className="nav">
             <ul className="list">
               <li className="item">
-                <Link to="/work">Work</Link>
+                <Link to="/#work">Work</Link>
               </li>
               <li className="item">
-                <Link to="/notes">Notes</Link>
+                <Link to="/#notes">Notes</Link>
               </li>
             </ul>
           </nav>
@@ -35,21 +34,9 @@ export default function Header(props) {
           </div>
         </div>
       </div>
-    </HeaderTag>
+    </header>
   )
 }
-
-const HeaderTag = styled.header`
-  position: fixed;
-  width: 100%;
-  padding: 15px 30px 15px;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #f5f1ed;
-  border-bottom: 1px solid #dddddd;
-  z-index: 10;
-`
 
 const GlobalStyle = createGlobalStyle`
   // html {

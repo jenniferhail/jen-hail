@@ -1,9 +1,11 @@
 import React from "react"
-import styled from "styled-components"
 
 export default function Gallery() {
+  const sectionStyle = {
+    "--vh": "1vh",
+  }
   return (
-    <GallerySection id="gallery" className="layout gallery">
+    <section id="gallery" className="layout gallery" style={sectionStyle}>
       <div className="wrapper">
         <div className="row">
           <img className="img-1" src={"/smile.jpg"} alt="" />
@@ -26,10 +28,6 @@ export default function Gallery() {
           </div>
         </div>
       </div>
-    </GallerySection>
+    </section>
   )
 }
-
-const GallerySection = styled.section`
-  --vh: 1vh;
-`

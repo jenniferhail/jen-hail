@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 export default function Notes() {
@@ -13,16 +14,22 @@ export default function Notes() {
         <div className="row">
           <ul className="note-list">
             <li className="item">
-              <a href="<?php the_permalink(); ?>">Post Title</a>
-              <span className="category">Category</span>
+              <Link to="/notes/a-summer-in-vancouver">
+                A Summer in Vancouver
+              </Link>
+              <span className="category">Travel</span>
             </li>
             <li className="item">
-              <a href="<?php the_permalink(); ?>">Post Title</a>
-              <span className="category">Category</span>
+              <Link to="/notes/behind-the-scenes-with-studio-faculty">
+                Behind the Scenes with Studio Faculty
+              </Link>
+              <span className="category">Design</span>
             </li>
             <li className="item">
-              <a href="<?php the_permalink(); ?>">Post Title</a>
-              <span className="category">Category</span>
+              <Link to="/notes/three-books">
+                Three Books Every Business Owner Should Read
+              </Link>
+              <span className="category">Business</span>
             </li>
           </ul>
         </div>
